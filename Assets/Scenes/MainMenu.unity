@@ -3194,7 +3194,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "IN THIS GAME, YOUR GOAL IS TO reach the end of level and avoid  crashing
     with obstacles.\nW-PROPEL THE ROCKET     N-NIGHT VISION\n          A/D-TURN LEFT/RIGHT\n\n\t
-    CHEAT BUTTONS:\nL-invulnerability    O/I-SWITCH LEVELS\nI-disable obstacles 
+    CHEAT BUTTONS:\nL-invulnerability    I/O-SWITCH LEVELS\nI-disable obstacles 
     L-INVULNERABILITY\n               GOOD LUCK!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.Rendering.UI;
 using UnityEngine.TextCore.Text;
 
 public class CheatController : MonoBehaviour
@@ -13,12 +14,16 @@ public class CheatController : MonoBehaviour
     private PlayerCollision _playerCollision;
     private ObstacleDamager[] _obstacles;
 
+    private int nonPlayableSceneCount;
+
     private void Start()
     {
         _playerCollision = GetComponentInChildren<PlayerCollision>();
         _obstacles = GetComponentsInChildren<ObstacleDamager>();
         
         _isEveryObstacleEnabled = true;
+
+        nonPlayableSceneCount = 2;
     }
     
     private void Update()
@@ -35,15 +40,21 @@ public class CheatController : MonoBehaviour
             DisableObstacles();
         }
         
-        if (Input.GetKey(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             TimeAndStatusManager.areCheatsUsed = true;
-            LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex - 1 != 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            }
         }
-        else if (Input.GetKey(KeyCode.I))
+        else if (Input.GetKeyDown(KeyCode.O))
         {
             TimeAndStatusManager.areCheatsUsed = true;
-            LoadLevel(SceneManager.GetActiveScene().buildIndex - 1);
+            if (SceneManager.GetActiveScene().buildIndex + nonPlayableSceneCount != SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
     
