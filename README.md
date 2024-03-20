@@ -10,13 +10,19 @@ https://www.youtube.com/watch?v=G2nmOULeOBQ
  In this game, your goal is to reach the end of level and avoid  crashing with obstacles.
 
 W - Propel the rocket 
+
 A/D - Turn left/right 
+
 N - Night vision! 
 
  CHEAT BUTTONS:
+ 
 L-invulnerability
+
 I/O - Switch levels
+
 I - Disable obstacles
+
 L - Invulnerability
                
 Good luck!
