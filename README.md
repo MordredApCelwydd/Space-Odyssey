@@ -7,6 +7,8 @@
 Music — Space Travel by Pix [Copyright-free]
 https://www.youtube.com/watch?v=G2nmOULeOBQ
 
+You can play the game here: https://mordredapcelwydd.itch.io/space-odyssey
+
  In this game, your goal is to reach the end of level and avoid  crashing with obstacles.
 
 W - Propel the rocket 
